@@ -17,7 +17,7 @@ export default function CartContextProvider(props) {
   function checkOutSession(cartId,shippingAddress) {
     return axios
       .post(
-        `https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartId}?url=https://Ecommerce-App.vercel.app`,
+        `https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartId}?url=https://ecommerce-app-nine-theta.vercel.app`,
         {
           shippingAddress,
         },

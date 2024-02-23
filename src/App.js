@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react";
-import { RouterProvider, createBrowserRouter, createHashRouter } from "react-router-dom";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Layout from "./Components/Layout/Layout";
 import Home from "./Components/Home/Home";
 import Brands from "./Components/Brands/Brands";
@@ -24,7 +24,7 @@ import ShippingAddress from "./Components/ShippingAddress/ShippingAddress";
 import AllOrders from "./Components/AllOrders/AllOrders"
 
 export default function App() {
-  let routers = createHashRouter([
+  let routers = createBrowserRouter([
     {
       path: "",
       element: <Layout />,
